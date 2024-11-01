@@ -1,0 +1,77 @@
+html,
+body {
+    &,
+    * {
+        cursor: none;     
+        background: rgb(2,0,36);
+    }
+}
+body{
+    overflow: hidden;
+}
+.btn {
+    color: rgb(0, 0, 0);
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+#header{
+    top:350px;
+    text-align: center;
+    position: relative;
+    color: white;
+    font-size: 40px;
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#text{
+    font-family: "Lato", serif;
+    font-weight: 700;
+    position: relative;
+    font-style: normal;
+    font-size: 20px;
+    position: relative;
+    top:360px;
+    color: white;
+    text-align: center;
+    color:white;
+}
+#items{
+    position: relative;
+    top:400px;
+    text-align: center;
+}
+.cursor-dot,
+.cursor-dot-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+}
+.cursor-dot {
+    size: 8px;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+}
+
+.cursor-dot-outline {
+    size: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.26);
+    opacity: 50%;
+}
