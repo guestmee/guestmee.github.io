@@ -24,7 +24,6 @@ body{
 #header{
     top:350px;
     text-align: center;
-    position: relative;
     color: white;
     font-size: 40px;
     font-family: "Lato", serif;
@@ -35,17 +34,23 @@ body{
 #text{
     font-family: "Lato", serif;
     font-weight: 700;
-    position: relative;
     font-style: normal;
     font-size: 20px;
-    position: relative;
     top:360px;
     color: white;
     text-align: center;
     color:white;
 }
+#wellknown {
+    text-align: center;
+}
+#content { 
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
 #items{
-    position: relative;
     top:400px;
     text-align: center;
 }

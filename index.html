@@ -18,14 +18,24 @@
 			<span title="Dodaj mnie na discordzie!">@guestmee</span>
 		</div></br>
 		<div id="text">
-			<span title="guestmee na discordzie!">Potrzebujesz czegoś?<br/> pisz discord.</span>
+			<span title="guestmee na discordzie!">Do you need something?<br/>I mean programing thing<br/>lmk on discord.</span>
+		</div>
+		</br>
+		<div id="items">
+			<button onclick="location.href='https://github.com/guestmee';" class="btn"><i class="fa-brands fa-github"></i> GitHub</button>
+			<button onclick="location.href='https://guestme.itch.io/';" class="btn"><i class="fa-brands fa-itch-io"></i> Itch</button>
+			<button onclick="location.href='https://discord.gg/BYPbEcaJNY';" class="btn"><i class="fa-brands fa-discord"></i> Discord</button>
+		</div>
+		</br>
+		<div id="wellknown">
+			<img src="https://www.netgen.co.za/wp-content/uploads/2022/03/C-image-for-Netgen-1024x1024.png" width="48px"/>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Lua-Logo.svg" width="48px"/>
+			<img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" width="48px"/>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLISVEOB4Ylhis6Ld49moWvVKWKY3JqmbvSw&s" width="48px"/>
+			<img src="https://cdn-icons-png.flaticon.com/512/174/174854.png" width="48px"/>
 		</div>
 	</div>
-	<div id="items">
-		<button onclick="location.href='https://github.com/guestmee';" class="btn"><i class="fa-brands fa-github"></i> GitHub</button>
-		<button onclick="location.href='https://guestme.itch.io/';" class="btn"><i class="fa-brands fa-itch-io"></i> Itch</button>
-		<button onclick="location.href='https://discord.gg/BYPbEcaJNY';" class="btn"><i class="fa-brands fa-discord"></i> Discord</button>
-	</div>
+	
 	<div class="cursor-dot-outline"></div>
 	<div class="cursor-dot"></div>
 	<script>
@@ -49,21 +59,21 @@
 				this.animateDotOutline();
 			},
 			
-		     updateCursor: function(e) {
-		         var self = this;
+			updateCursor: function(e) {
+				var self = this;
 				
-		         console.log(e)
+				console.log(e)
 				
-		         // Show the cursor
-		         self.cursorVisible = true;
-		         self.toggleCursorVisibility();
+				// Show the cursor
+				self.cursorVisible = true;
+				self.toggleCursorVisibility();
 
-		         // Position the dot
-		         self.endX = e.pageX;
-		         self.endY = e.pageY;
-		         self.$dot.style.top = self.endY + 'px';
-		         self.$dot.style.left = self.endX + 'px';
-		     },
+				// Position the dot
+				self.endX = e.pageX;
+				self.endY = e.pageY;
+				self.$dot.style.top = self.endY + 'px';
+				self.$dot.style.left = self.endX + 'px';
+			},
 			
 			setupEventListeners: function() {
 				var self = this;
